@@ -1,0 +1,126 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: #0e120f;
+	color: white;
+	font-family: sans-serif;
+}
+
+
+#myearth {
+	width: 100%;
+	height: 100vh;
+	max-height: 100vw;
+	overflow: hidden;
+	cursor: grab;
+	opacity: 0;
+	transition: opacity 1.5s ease-in;
+}
+
+#myearth.earth-ready {
+	opacity: 1;
+}
+
+#myearth::before {
+	content: none;
+}
+
+
+/* background glow */
+
+#glow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	max-width: 100vh;
+	height: 100vh;
+	max-height: 100vw;
+	transform: translate(-50%, -50%);
+	
+	background: radial-gradient(ellipse at center, rgba(0,156,255,0.05) 25%,rgba(0,156,255,0.15) 53%,rgba(0,156,255,0.05) 56%,rgba(0,156,255,0) 70%);
+	z-index: 200;
+	pointer-events: none;
+}
+
+#columns {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row-reverse;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-align-items: center;
+	align-items: center;
+
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+#container-column,
+#earth-column {
+	width: 100%;
+}
+
+.swiper-container {
+	border: 1px black dotted;
+	width: 100%;
+	height: 26em;	
+}
+
+.swiper-slide h2 {
+	padding-top: 5em;
+	border-bottom: 0;
+}
+.swiper-slide big {
+	display: block;
+	font-weight: bold;
+	font-size: 6em;
+}
+.swiper-slide:nth-child(even) {
+	background-color: #eee;
+}
+
+.globeImage {
+	width: 100%;
+}
+
+/*<-------------------------!Mobile Styling-------------------------->*/
+
+@media only screen and (max-width: 1052px) {
+
+
+	#columns {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: column;
+		-webkit-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		align-items: center;
+	
+		max-width: 60em;
+		margin: 0 auto;
+	}
+
+	#container-column,
+	#earth-column {
+		width: 100%;
+	}
+	.swiper-container {
+		border: 1px black dotted;
+		width: 100%;
+		height: 19em;
+	}
+
+	.globeImage {
+        width: 100%;
+    }
+
+}
