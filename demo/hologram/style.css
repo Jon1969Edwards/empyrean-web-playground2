@@ -80,9 +80,9 @@ body {
 	font-weight: bold;
 	font-size: 6em;
 }
-.swiper-slide:nth-child(even) {
-	background-color: #eee;
-}
+/* .swiper-slide:nth-child(even) {
+	background-color: rgb(2, 2, 2);
+} */
 
 .globeImage {
 	width: 100%;
@@ -92,6 +92,9 @@ body {
 
 @media only screen and (max-width: 1052px) {
 
+	h1 {
+		margin: 0;
+	}
 
 	#columns {
 		display: -webkit-flex;
@@ -121,6 +124,15 @@ body {
 
 	.globeImage {
         width: 100%;
+		height: inherit;
     }
+
+	.swiper-slide {
+		flex-shrink: 0;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transition-property: transform;
+	}	  
 
 }

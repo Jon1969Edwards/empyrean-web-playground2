@@ -6,12 +6,28 @@ var mySwiper;
 
 document.addEventListener( "DOMContentLoaded", function(){
 	mySwiper = new Swiper('.swiper-container', {
-
+		direction: "horizontal",
+		slidesPerView: 1,
+        centeredSlides: true,
+        slidesPerGroupSkip: 1,
+		mousewheel: true,
 		loop: true,
 		grabCursor: true,
-
+		keyboard: {
+			enabled: true,
+		  },
+		  breakpoints: {
+			769: {
+			  slidesPerView: 1,
+			  slidesPerGroup: 1,
+			},
+		  },
+		  scrollbar: {
+			el: ".swiper-scrollbar",
+		  },
 		pagination: {
 		  el: '.swiper-pagination',
+		  clickable: true,
 		},
 
 		navigation: {
