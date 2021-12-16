@@ -61,17 +61,17 @@ window.addEventListener( "earthjsload", function() {
 		mapImage: '../demo/hologram/hologram-map.svg',
 		transparent: true,
 		
-		autoRotate : true,
-		autoRotateSpeed: 1.2,
-		autoRotateDelay: 100,
-		autoRotateStart: 2000,			
+		// autoRotate : false,
+		// autoRotateSpeed: 1.2,
+		// autoRotateDelay: 100,
+		// autoRotateStart: 2000,			
 		
 	} );
 	
 	
 	myearth.addEventListener( "ready", function() {
 
-		this.startAutoRotate();
+		// this.startAutoRotate();
 
 		// connections
 		
