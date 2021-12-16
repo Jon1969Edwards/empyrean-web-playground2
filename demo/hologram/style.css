@@ -63,6 +63,7 @@ body {
 #container-column,
 #earth-column {
 	width: 100%;
+	columns: 300px 3;
 }
 
 .swiper-container {
@@ -162,8 +163,60 @@ body {
 	
 	.swiper-slide img {
         display: block;
+        width: 89vw;
+        height: 100%;
+        object-fit: cover;
+      }
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+	#myearth {
+	width: 361px;
+	height: 100vh;
+	max-height: 100vw;
+	overflow: hidden;
+	cursor: grab;
+	opacity: 0;
+	right: 46%;
+	position: relative;
+	transition: opacity 1.5s ease-in;
+	}
+
+	#columns {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row-reverse;
+		-webkit-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		align-items: center;
+	
+		max-width: 60em;
+		margin: 0 auto;
+	}
+
+	#container-column, #earth-column {
+		width: 50%;
+		columns: 100px 3;
+	  }
+
+	.swiper-slide {
+		bottom: 0%;
+	  }
+
+	  .swiper-slide img {
+        display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
+
+	  .swiper-container {
+		border: 1px black dotted;
+		width: 23em;
+		height: 19em;
+	}
 }
