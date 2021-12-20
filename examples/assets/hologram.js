@@ -76,7 +76,7 @@ window.addEventListener( "earthjsload", function() {
 		// connections
 		
 		var line = {
-			color : '#009CFF',
+			color : '#f29f05',
 			opacity: 0.35,
 			hairline: true,
 			offset: -0.5
@@ -117,10 +117,10 @@ window.addEventListener( "earthjsload", function() {
 		Earth.SliderSync.enable( this, mySwiper, function( new_slide, old_slide ) {
 			console.log( new_slide );
 			if ( new_slide ) {
-				new_slide.marker.color = 'green';
+				new_slide.marker.color = '#2805f2';
 			}
 			if ( old_slide ) {
-				old_slide.marker.color = 'red';
+				old_slide.marker.color = '#f29f05';
 			}
 		} );
 		

@@ -9,9 +9,9 @@ body {
 
 
 #myearth {
-	width: 100%;
-	height: 100vh;
-	max-height: 100vw;
+	width: 68vh;
+	height: 67vh;
+	max-height: 146vw;
 	overflow: hidden;
 	cursor: grab;
 	opacity: 0;
@@ -55,19 +55,16 @@ body {
 	justify-content: space-between;
 	-webkit-align-items: center;
 	align-items: center;
-
-	max-width: 60em;
-	margin: 0 auto;
+	margin: 0 8%;
 }
 
 #container-column,
 #earth-column {
 	width: 100%;
-	columns: 300px 3;
+	columns: 300px 2;
 }
 
 .swiper-container {
-	border: 1px black dotted;
 	width: 100%;
 	height: 26em;	
 }
@@ -82,21 +79,43 @@ body {
 	font-size: 6em;
 }
 
-.swiper-button-next {
-	display: none;
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	width: 100%;
   }
 
-.swiper-button-prev {
-	display: none;
-}
-
-/* .swiper-slide:nth-child(even) {
-	background-color: rgb(2, 2, 2);
-} */
-
-.globeImage {
+.swiper-slide img {
+	display: block;
 	width: 100%;
-}
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .swiper-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	transition-property: transform;
+	box-sizing: content-box;
+  }
+
 
 /*<-------------------------!Mobile Styling-------------------------->*/
 
@@ -118,22 +137,39 @@ body {
 		-webkit-align-items: center;
 		align-items: center;
 	
-		max-width: 60em;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 
-	#container-column,
-	#earth-column {
-		width: 100%;
+	#myearth {
+		width: 46vh;
+		height: 67vh;
+		max-height: 117vw;
+		overflow: hidden;
+		cursor: grab;
+		opacity: 0;
+		transition: opacity 1.5s ease-in;
 	}
+
+	#container-column {
+		columns: 300px 1;
+		width: 82%;
+	}
+
+	#earth-column {
+		height: 40%;
+	}
+
 	.swiper-container {
-		border: 1px black dotted;
 		width: 100%;
-		height: 19em;
+		height: 50%;
+		margin: 0 0;
+		padding-top: 9%;
+		overflow: clip;
 	}
 
 	.globeImage {
-        width: 100%;
+        /* width: 100%; */
 		height: inherit;
     }
 
@@ -159,27 +195,37 @@ body {
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+		width: 78%;
       }
 	
 	.swiper-slide img {
         display: block;
-        width: 89vw;
+        width: 100%;
         height: 100%;
         object-fit: cover;
       }
+
+	  .swiper-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		display: flex;
+		transition-property: transform;
+		box-sizing: content-box;
+	  }
 }
 
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
 	#myearth {
-	width: 361px;
-	height: 100vh;
-	max-height: 100vw;
-	overflow: hidden;
-	cursor: grab;
-	opacity: 0;
-	right: 46%;
-	position: relative;
-	transition: opacity 1.5s ease-in;
+		width: 100%;
+		height: 94vh;
+		max-height: 100%;
+		overflow: hidden;
+		cursor: grab;
+		opacity: 0;
+		position: relative;
+		transition: opacity 1.5s ease-in;
 	}
 
 	#columns {
@@ -193,29 +239,46 @@ body {
 		justify-content: space-between;
 		-webkit-align-items: center;
 		align-items: center;
-	
-		max-width: 60em;
+		bottom: -7%;
+		position: absolute;
+		height: 100%;
 		margin: 0 auto;
 	}
 
 	#container-column, #earth-column {
-		width: 50%;
-		columns: 100px 3;
+		width: 100%;
+		height: 100%;
+		columns: 221px 2;
 	  }
 
-	.swiper-slide {
-		bottom: 0%;
-	  }
+	  .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
 
 	  .swiper-slide img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
+		padding-left: 9%;
       }
 
 	  .swiper-container {
-		border: 1px black dotted;
 		width: 23em;
 		height: 19em;
 	}
