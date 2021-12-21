@@ -1,0 +1,466 @@
+/*<-------------------------!Mobile Styling-------------------------->*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#columns {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: column;
+		-webkit-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		align-items: center;
+		margin: 0 8%;
+		background-color: red;
+	}
+	
+	#container-column,
+	#earth-column {
+		width: 100%;
+		columns: 300px 2;
+	}
+
+	#myearth {
+		width: 100%;
+		height: 47vh;
+		max-height: 146vw;
+		overflow: hidden;
+		cursor: grab;
+		opacity: 0;
+		transition: opacity 1.5s ease-in;
+	}
+	
+	#myearth.earth-ready {
+		opacity: 1;
+	}
+	
+	#myearth::before {
+		content: none;
+	}
+	
+	.swiper-container {
+		width: 100%;
+		height: 17em;	
+	}
+	
+	.swiper-slide h2 {
+		padding-top: 5em;
+		border-bottom: 0;
+	}
+	.swiper-slide big {
+		display: block;
+		font-weight: bold;
+		font-size: 6em;
+	}
+	
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+	
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		width: 100%;
+	  }
+	
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	  }
+	
+	  .swiper-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		display: flex;
+		transition-property: transform;
+		box-sizing: content-box;
+	  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#columns {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row-reverse;
+		-webkit-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		align-items: center;
+		margin: 0 8%;
+		background-color: rgb(9, 255, 0);
+	}
+	
+	#container-column,
+	#earth-column {
+		width: 100%;
+		columns: 300px 2;
+	}
+
+	#myearth {
+		width: 68vh;
+		height: 67vh;
+		max-height: 146vw;
+		overflow: hidden;
+		cursor: grab;
+		opacity: 0;
+		transition: opacity 1.5s ease-in;
+	}
+	
+	#myearth.earth-ready {
+		opacity: 1;
+	}
+	
+	#myearth::before {
+		content: none;
+	}
+	
+	.swiper-container {
+		width: 100%;
+		height: 26em;	
+	}
+	
+	.swiper-slide h2 {
+		padding-top: 5em;
+		border-bottom: 0;
+	}
+	.swiper-slide big {
+		display: block;
+		font-weight: bold;
+		font-size: 6em;
+	}
+	
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+	
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		width: 100%;
+	  }
+	
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	  }
+	
+	  .swiper-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		display: flex;
+		transition-property: transform;
+		box-sizing: content-box;
+	  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#columns {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row-reverse;
+		-webkit-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		align-items: center;
+		margin: 1% 8%;
+		background-color: deeppink;
+	}
+	
+	#container-column,
+	#earth-column {
+		width: 100%;
+		columns: 300px 2;
+	}
+
+	#myearth {
+		width: 100%;
+		height: 80vh;
+		max-height: 146vw;
+		overflow: hidden;
+		cursor: grab;
+		opacity: 0;
+		transition: opacity 1.5s ease-in;
+	}
+	
+	#myearth.earth-ready {
+		opacity: 1;
+	}
+	
+	#myearth::before {
+		content: none;
+	}
+	
+	.swiper-container {
+		width: 100%;
+		height: 17em;	
+	}
+	
+	.swiper-slide h2 {
+		padding-top: 5em;
+		border-bottom: 0;
+	}
+	.swiper-slide big {
+		display: block;
+		font-weight: bold;
+		font-size: 6em;
+	}
+	
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+	
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		width: 100%;
+	  }
+	
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	  }
+	
+	  .swiper-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		display: flex;
+		transition-property: transform;
+		box-sizing: content-box;
+	  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#columns {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row-reverse;
+		-webkit-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		align-items: center;
+		margin: 0 8%;
+	}
+	
+	#container-column,
+	#earth-column {
+		width: 100%;
+		columns: 300px 2;
+	}
+
+	#myearth {
+		width: 68vh;
+		height: 67vh;
+		max-height: 146vw;
+		overflow: hidden;
+		cursor: grab;
+		opacity: 0;
+		transition: opacity 1.5s ease-in;
+	}
+	
+	#myearth.earth-ready {
+		opacity: 1;
+	}
+	
+	#myearth::before {
+		content: none;
+	}
+	
+	.swiper-container {
+		width: 100%;
+		height: 26em;	
+	}
+	
+	.swiper-slide h2 {
+		padding-top: 5em;
+		border-bottom: 0;
+	}
+	.swiper-slide big {
+		display: block;
+		font-weight: bold;
+		font-size: 6em;
+	}
+	
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+	
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		width: 100%;
+	  }
+	
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	  }
+	
+	  .swiper-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		display: flex;
+		transition-property: transform;
+		box-sizing: content-box;
+	  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#columns {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row-reverse;
+		-webkit-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		align-items: center;
+		margin: 0 8%;
+		background-color: darkorange;
+	}
+	
+	#container-column,
+	#earth-column {
+		width: 100%;
+		columns: 300px 2;
+	}
+
+	#myearth {
+		width: 68vh;
+		height: 67vh;
+		max-height: 146vw;
+		overflow: hidden;
+		cursor: grab;
+		opacity: 0;
+		transition: opacity 1.5s ease-in;
+	}
+	
+	#myearth.earth-ready {
+		opacity: 1;
+	}
+	
+	#myearth::before {
+		content: none;
+	}
+	
+	.swiper-container {
+		width: 100%;
+		height: 26em;	
+	}
+	
+	.swiper-slide h2 {
+		padding-top: 5em;
+		border-bottom: 0;
+	}
+	.swiper-slide big {
+		display: block;
+		font-weight: bold;
+		font-size: 6em;
+	}
+	
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+	
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		width: 100%;
+	  }
+	
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	  }
+	
+	  .swiper-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		display: flex;
+		transition-property: transform;
+		box-sizing: content-box;
+	  }
+	}
